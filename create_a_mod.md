@@ -276,4 +276,5 @@ Good job, you made your first mod for JustEmuTarkov, all other parts to be modde
 **Thanks to @KandaSoranyan alias Sorata-sempai on discord for making this tutorial**
 
 # Official links
-**Discord link**: 
+**Discord link**: [link]https://discord.gg/JnJEev4[/link]
+**Reddit page**: [link]https://www.reddit.com/r/EmuTarkov/[/link]

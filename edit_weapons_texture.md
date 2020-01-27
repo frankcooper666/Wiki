@@ -8,8 +8,7 @@ What we are going to do, is editing base gamefiles textures of a weapon, for mak
 ## Dependencies
 In order to edit weaons textures, you will need some specific softwares. The software you need are :
 * AssetBundleExtractor - [link]https://github.com/DerPopo/UABE/releases[/link]
-* Paint.net - [link]https://www.dotpdn.com/downloads/pdn.html[/link]
-* Or you can use Photoshop if you own it - No link for downloading it.
+* Photoshop
 ## How to start ?
 Well, first of all, we are going to create a specific folder for our work, i will call it *EditTutorial*. In this folder i will create another folder called *TexturesFiles* in wich i will save my texture in a editable format.
 I'm going to edit the *DT MDR .308* weapon for this tutorial.
@@ -28,13 +27,13 @@ After doing this, click on the "Info" box on the main window [link]https://i.img
 We need to find in the list, these files :
 - *weapon_dt_mdr_556x45_upper_LOD0_diff_blk*
 - *weapon_dt_mdr_556x45_lower_LOD0_diff_blk*
-
+You only need to edit **_diff** files for replacing the textures.
 When you found them, select each file, click on "Plugins" at the right and choose **Export to .tga** then click "OK". [link]https://i.imgur.com/DGkrCuG.png[/link]
 The soft will ask you to save the file, save it in `/EditTutorial/TexturesFiles`.
 
 3. Step three: Edit the textures file to add the camo.
 
-We are now gonna add our desired camo to the weapon. For this, open up *Paint.net* or any image editing software you own, and open one of the file we extracted earlier.
+We are now gonna add our desired camo to the weapon. For this, open up *Photoshop* and open one of the file we extracted earlier.
 For this, download any camo pattern you find, and drag the camo image into your image editing software, and put it in a new layer. Make sure it cover up the entire file like this : [link]https://i.imgur.com/l6smFVX.jpg[/link]
 When it's done, save the file, and keep the .tga extension. Overwrite the one you extracted earlier.
 Do the same thing for the second file !
@@ -55,11 +54,13 @@ When it's done, rename the original *client_assets.bundle* file to **client_asse
 
 6. Step six: Launch the game!
 Now we have done every step of this tutorial, you can start the game, and see how your gun looks !
+Final result : [link]https://i.imgur.com/VZUbL9n.jpg[/link]
 ### The end
-
+You now, know how to edit files textures on Escape From Tarkov ! This works for every textures on the game. Feel free to share your work on discord !
 
 # Thanks
 **Thanks to @KandaSoranyan alias Sorata-sempai on discord for making this tutorial**
 
 # Official links
-**Discord link**: 
+**Discord link**: [link]https://discord.gg/JnJEev4[/link]
+**Reddit page**: [link]https://www.reddit.com/r/EmuTarkov/[/link]
