@@ -6,7 +6,7 @@ So yeah, information on this page is likely to change in the future
 2. Rename the weather present to what you want
 3. Make changes where needed
 
-We recommend you to add the weather as a mod. More info here : [link]https://github.com/KandaSoranyan/JustEmuTarkovWiki/blob/master/tutorials/create_a_mod.md[/link]
+We recommend you to add the weather as a mod. More info here : https://github.com/KandaSoranyan/JustEmuTarkovWiki/blob/master/tutorials/create_a_mod.md
 
 ## Editing weather
 Note that the weather files are loaded only when the server starts. If you make changes to a weather profile during the game, restart the server for the changes to take into effect.
