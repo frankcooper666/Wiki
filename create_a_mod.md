@@ -14,14 +14,14 @@ By using a mod for your changes, it make it easier for you to manage your edits,
 ```
 * Replace the values by your own values.
 * Don't forget to add a comma after the last mod before yours.
-<br>
+
 You're done for the first part of the modding part ! The easiest !
 ## The main topic.
-<br>
+
 Well, modding is simple : Overwritting loaded files by the one you added to your mod without editing the default one located in `ServerDir/db/`.
-<br>
+
 For now, not everything can be "modded", only these things can : **Items**,**Bots loadouts**,**Hideout files**,**Assorts**,**Traders**,**Weather**.
-<br>
+
 * Create your mod folder, the name need to match like this : **authorName-ModName** depending on what you put in the *server.config.json*.
 * In this mod folder, create a file called **mod.config.json** and put the following code in :
 ```json
@@ -255,9 +255,9 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
   }
 }
 ```
-<br>
+
 As you can see, there's the filepath for each moddable part, we will edit this part when we have edited what we want, for our case, it's an item. I want to edit my sicc item case to have more slots, the item ID is : *5d235bb686f77443f4331278*. So i copy the file `5d235bb686f77443f4331278.json` in `ServerDir/db/items` and i paste it in `ServerDir/user/mods/Author-MyModName/db/items/`. The file path must be the same as where you copy the file you want to mod.
-<br>
+
 * I open my file up with any IDE, i prefer VScodium personnaly, and make my changes. After that i save and close the file.
 * Now that i edited my file, i go back to my *mod.config.json* and i go into the items brackets for adding my item. For me it will looks like this :
 ```json
@@ -267,10 +267,13 @@ As you can see, there's the filepath for each moddable part, we will edit this p
     },
 ```
 * Save your mod.config.json and start the server. It should recache and your mod is working ! Good job camarad !
-<br>
+
 ### The end
 Good job, you made your first mod for JustEmuTarkov, all other parts to be modded work the same way. Just reproduce it with the desired part !
 
 # Thanks
 **Thanks to @InNoHurryToCode for making modding possible on JustEmuTarkov !**
 **Thanks to @KandaSoranyan alias Sorata-sempai on discord for making this tutorial**
+
+# Official links
+**Discord link**: 
