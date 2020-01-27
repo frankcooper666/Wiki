@@ -36,3 +36,8 @@ rain                       | 0    | 1
 rainIntensity              | 0    | 2
 temp                       | -50  | 50
 accelerate                 | 0    | 10
+
+# Official links
+**Discord link**: https://discord.gg/JnJEev4
+
+**Reddit page**: https://www.reddit.com/r/EmuTarkov/

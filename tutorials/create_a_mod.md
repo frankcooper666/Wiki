@@ -277,4 +277,5 @@ Good job, you made your first mod for JustEmuTarkov, all other parts to be modde
 
 # Official links
 **Discord link**: https://discord.gg/JnJEev4
+
 **Reddit page**: https://www.reddit.com/r/EmuTarkov/
