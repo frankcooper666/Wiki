@@ -49,9 +49,15 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
     },
     "traders": {},
     "hideout": {
-      "areas": {},
-      "production": {},
-      "scavcase": {}
+      "areas": {
+          "NameOfTheFile": "user/mods/ModFolderName/path/to/the/file/it/should/be/the/same/as/the/db/folder/according/to/the/part/you/mod.json"
+      },
+      "production": {
+            "NameOfTheFile": "user/mods/ModFolderName/path/to/the/file/it/should/be/the/same/as/the/db/folder/according/to/the/part/you/mod.json"
+      },
+      "scavcase": {
+           "NameOfTheFile": "user/mods/ModFolderName/path/to/the/file/it/should/be/the/same/as/the/db/folder/according/to/the/part/you/mod.json"
+      }
     },
     "bots": {
       "pmc": {
@@ -244,3 +250,5 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
   }
 }
 ```
+<br>
+As you can see, there's the filepath for each moddable part, 
