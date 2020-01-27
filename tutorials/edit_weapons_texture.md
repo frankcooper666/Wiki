@@ -7,7 +7,7 @@ What we are going to do, is editing base gamefiles textures of a weapon, for mak
 
 ## Dependencies
 In order to edit weaons textures, you will need some specific softwares. The software you need are :
-* AssetBundleExtractor - [link]https://github.com/DerPopo/UABE/releases[/link]
+* AssetBundleExtractor - https://github.com/DerPopo/UABE/releases
 * Photoshop
 ## How to start ?
 Well, first of all, we are going to create a specific folder for our work, i will call it *EditTutorial*. In this folder i will create another folder called *TexturesFiles* in wich i will save my texture in a editable format.
