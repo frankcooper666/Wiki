@@ -19,10 +19,10 @@ For this, go in your gamedir `GameDir\EscapeFromTarkov_Data\StreamingAssets\Wind
 
 2. Step two : Extracting the desired texture file.
 
-For this step, we will use AssetBundleExtractor, then open AssetBundleExtractor.exe where you extracted it, you should have this window open : [image]https://i.imgur.com/YprOfos.png
-Click on *File* -> *Open* and select **client_assets.bundle** in */EditTutorial/* folder and click "open". After doing it, this window should pop up : [image]https://i.imgur.com/CBNxbIB.png
+For this step, we will use AssetBundleExtractor, then open AssetBundleExtractor.exe where you extracted it, you should have this window open : ![image]https://i.imgur.com/YprOfos.png
+Click on *File* -> *Open* and select **client_assets.bundle** in */EditTutorial/* folder and click "open". After doing it, this window should pop up : ![image]https://i.imgur.com/CBNxbIB.png
 Click on "yes" and name the file to save like you want. I will call it *extracted* and save.
-After doing this, click on the "Info" box on the main window [image]https://i.imgur.com/8R3HDn1.png[/image] and it window will pop up on the screen : [image]https://i.imgur.com/OUgd5hg.png
+After doing this, click on the "Info" box on the main window ![image]https://i.imgur.com/8R3HDn1.png[/image] and it window will pop up on the screen : ![image]https://i.imgur.com/OUgd5hg.png
 
 We need to find in the list, these files :
 - *weapon_dt_mdr_556x45_upper_LOD0_diff_blk*
