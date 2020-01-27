@@ -18,7 +18,7 @@ By using a mod for your changes, it make it easier for you to manage your edits,
 <br>
 You're done for the first part of the modding part ! The easiest !
 <br>
-## The main topic.
+### The main topic.
 <br>
 Well, modding is simple : Overwritting loaded files by the one you added to your mod without editing the default one located in `ServerDir/db/`.
 <br>
