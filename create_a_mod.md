@@ -45,7 +45,11 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
   "files": {
     "items": {},
     "assort": {
-      "CHANGEME": {}
+      "CHANGEME": {
+          "barter":{},
+          "items":{},
+          "level":{}
+      }
     },
     "traders": {},
     "hideout": {
@@ -59,6 +63,7 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
            "NameOfTheFile": "user/mods/ModFolderName/path/to/the/file/it/should/be/the/same/as/the/db/folder/according/to/the/part/you/mod.json"
       }
     },
+    "weather":{},
     "bots": {
       "pmc": {
         "bear": {
@@ -251,4 +256,13 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
 }
 ```
 <br>
-As you can see, there's the filepath for each moddable part, 
+As you can see, there's the filepath for each moddable part, we will edit this part when we have edited what we want, for our case, it's an item. I want to edit my sicc item case to have more slots, the item ID is : *5d235bb686f77443f4331278*. So i copy the file `5d235bb686f77443f4331278.json` in `ServerDir/db/items` and i paste it in `ServerDir/user/mods/Author-MyModName/db/items/`. The file path must be the same as where you copy the file you want to mod.
+<br>
+* I open my file up with any IDE, i prefer VScodium personnaly, and make my changes. After that i save and close the file.
+* Now that i edited my file, i go back to my *mod.config.json* and i go into the items brackets for adding my item. For me it will looks like this :
+```json
+ "files": {
+    "items": {
+         "5d235bb686f77443f4331278": "user/mods/Author-ModFolderName/db/items/5d235bb686f77443f4331278.json"
+    },
+```
