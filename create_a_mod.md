@@ -22,4 +22,225 @@ Well, modding is simple : Overwritting loaded files by the one you added to your
 <br>
 For now, not everything can be "modded", only these things can : **Items**,**Bots loadouts**,**Hideout files**,**Assorts**,**Traders**,**Weather**.
 <br>
-
+* Create your mod folder, the name need to match like this : **authorName-ModName** depending on what you put in the *server.config.json*.
+* In this mod folder, create a file called **mod.config.json** and put the following code in :
+```json
+{
+  "name": "NameOfTheMod",
+  "author": [
+    "AuthorOfTheMod",
+    "ProbablyNotAlone"
+  ],
+  "description": "Add a description to your mod",
+  "license": "Do you use a license ?",
+  "releases": [
+    {
+      "version": "1.0.0",
+      "changelog": [
+        "Add your changelog here."
+      ]
+    }
+  ],
+  "dependencies": [],
+  "files": {
+    "items": {},
+    "assort": {
+      "CHANGEME": {}
+    },
+    "traders": {},
+    "hideout": {
+      "areas": {},
+      "production": {},
+      "scavcase": {}
+    },
+    "bots": {
+      "pmc": {
+        "bear": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "usec": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        }
+      },
+      "scav": {
+        "assault": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "bossbully": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "bossgluhar": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "bosskilla": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "bosskojaniy": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "followerbully": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "followergluharassault": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "followergluharscout": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "followergluharsecurity": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "followerkojaniy": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "marksman": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        },
+        "pmcbot": {
+          "appearance": {
+            "body": {},
+            "feet": {},
+            "hands": {},
+            "head": {},
+            "voice": {}
+          },
+          "experience": {},
+          "health": {},
+          "inventory": {},
+          "names": {}
+        }
+      }
+    }
+  }
+}
+```
