@@ -18,7 +18,9 @@ By using a mod for your changes, it make it easier for you to manage your edits,
 <br>
 You're done for the first part of the modding part ! The easiest !
 <br>
-## The main topic
-Well, modding is simple : Overwritting loaded files by the one you added to your mod without editing the default one located in `ServerDir/db/`.<br>
-For now, not everything can be "modded", only these things can : **Items**,**Bots loadouts**,**Hideout files**,**Assorts**,**Traders**,**Weather**<br>
+## The main topic.
+Well, modding is simple : Overwritting loaded files by the one you added to your mod without editing the default one located in `ServerDir/db/`.
+<br>
+For now, not everything can be "modded", only these things can : **Items**,**Bots loadouts**,**Hideout files**,**Assorts**,**Traders**,**Weather**.
+<br>
 
