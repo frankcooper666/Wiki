@@ -45,7 +45,7 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
   "files": {
     "items": {},
     "assort": {
-      "CHANGEME": {
+      "ragfair": {
           "barter":{},
           "items":{},
           "level":{}
