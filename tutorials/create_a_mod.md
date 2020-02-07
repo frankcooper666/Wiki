@@ -345,7 +345,7 @@ As you can see, there's the filepath for each moddable part, we will edit this p
          "5d235bb686f77443f4331278": "user/mods/Author-ModFolderName/db/items/5d235bb686f77443f4331278.json"
     },
 ```
-* Save your mod.config.json and start the server. It should recache and your mod is working ! Good job camarad !
+* Save your mod.config.json and start the server. It should recache and your mod is working ! Good job comrade !
 
 ### The end
 Good job, you made your first mod for JustEmuTarkov, all other parts to be modded work the same way. Just reproduce it with the desired part !
