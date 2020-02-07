@@ -1,6 +1,6 @@
 ### utility.getDate()
 
-Give you the actual date
+Give you the current date
 
 **Usage exemple :**
 ```js

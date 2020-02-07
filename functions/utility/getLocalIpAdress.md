@@ -4,5 +4,5 @@ Return you the local ip adress
 
 **Usage exemple :**
 ```js
-utility.getLocalIpAddress(')
+utility.getLocalIpAddress()
 ```
