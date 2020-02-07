@@ -43,12 +43,91 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
   ],
   "dependencies": [],
   "files": {
+    "locales" {
+    "en" {
+      "handbook" {
+        "<itemid>": "user/mods/MasterUwU-UwU_world/db/locales/en/handbook/<itemid>.json"
+      }
+    }
+  }
     "items": {},
     "assort": {
-      "CHANGEME": {
+      "ragfair": {
           "barter":{},
           "items":{},
           "level":{}
+      }
+    },
+    "maps": {
+      "bigmap": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "develop": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "factory4_day": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "factory4_night": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "hideout": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "interchange": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "laboratory": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "rezervbase": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "shoreline": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
+      },
+      "woods": {
+          "bosses":{},
+          "entries":{},
+          "exits":{},
+          "loot":{},
+          "waves":{}
       }
     },
     "traders": {},
