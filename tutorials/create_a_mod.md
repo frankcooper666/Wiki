@@ -325,6 +325,12 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
 }
 }
 ```
+### Some explanations :
+Note that you now have 3 main "folders". **src**,**res**,**db**:
+
+**src** is made for adding **scripts** mods to the game, everything that is in /src/ folder.
+**res** is made for adding or editing games images (traders images for exemple), everything that is in /res/ folder.
+**db** is made for edit or add servers items, quest, locale and so on, everything that is in /db/ folder.
 
 As you can see, there's the filepath for each moddable part, we will edit this part when we have edited what we want, for our case, it's an item. I want to edit my sicc item case to have more slots, the item ID is : *5d235bb686f77443f4331278*. So i copy the file `5d235bb686f77443f4331278.json` in `ServerDir/db/items` and i paste it in `ServerDir/user/mods/Author-MyModName-version/db/items/`. The file path must be the same as where you copy the file you want to mod.
 
