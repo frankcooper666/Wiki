@@ -1,21 +1,7 @@
 # Create a mod on JustEmuTarkov
 ## Why making my changes as a mod ?
 By using a mod for your changes, it make it easier for you to manage your edits, and avoid any issue with base DB files. That's for this reason we recommend you to make it as mod, for not overwritting base files. It will avoid you to loose them when you upgrade your server too.
-## How to start ?
-* You need to go to your `ServerDir/user/server.config.json` and open that file.
-* Add after the last mod, this part of code :
-```json
-{
-    "name": "NameOfTheMod",
-    "author": "AuthorOfTheMod",
-    "version": "1.0.0",
-    "enabled": true
-}
-```
-* Replace the values by your own values.
-* Don't forget to add a comma after the last mod before yours.
 
-You're done for the first part of the modding part ! The easiest !
 ## The main topic.
 
 Well, modding is simple : Overwritting loaded files by the one you added to your mod without editing the default one located in `ServerDir/db/`.
@@ -58,70 +44,103 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+              "dynamic":{
+                "lootIDFolder":{
+                 "lootfileName":"/db/path/to/.json";
+                }
+              },
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "develop": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "factory4_day": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "factory4_night": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
-          "waves":{}
-      },
-      "hideout": {
-          "bosses":{},
-          "entries":{},
-          "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "interchange": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "laboratory": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "rezervbase": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "shoreline": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       },
       "woods": {
           "bosses":{},
           "entries":{},
           "exits":{},
-          "loot":{},
+          "loot":{
+            "dynamic":{},
+              "forced":{},
+              "static":{}
+          },
           "waves":{}
       }
     },
@@ -337,7 +356,7 @@ As you can see, there's the filepath for each moddable part, we will edit this p
 * I open my file up with any IDE, i prefer VScodium personnaly, and make my changes. After that i save and close the file.
 * Now that i edited my file, i go back to my *mod.config.json* and i go into the items brackets for adding my item. For me it will looks like this :
 ```json
- "files": {
+ "db": {
     "items": {
          "5d235bb686f77443f4331278": "db/items/5d235bb686f77443f4331278.json"
     },
@@ -351,6 +370,6 @@ Good job, you made your first mod for JustEmuTarkov, all other parts to be modde
 **Thanks to @InNoHurryToCode for making modding possible on JustEmuTarkov !**
 
 # Official links
-**Discord link**: https://discord.gg/JnJEev4
+**Discord link**: https://discord.gg/jv7X8wC
 
 **Reddit page**: https://www.reddit.com/r/EmuTarkov/
