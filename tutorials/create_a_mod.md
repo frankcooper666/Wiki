@@ -19,9 +19,7 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
   "dependencies": {},
   "res": {},
   "src":{
-		"callback":{},
-		"classes":{},
-		"responses":{}
+      "scriptname":"path/to/script/file"
 	},
   "db": {
     "locales": {
