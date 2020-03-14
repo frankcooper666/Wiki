@@ -6,8 +6,6 @@ By using a mod for your changes, it make it easier for you to manage your edits,
 
 Well, modding is simple : Overwritting loaded files by the one you added to your mod without editing the default one located in `ServerDir/db/`.
 
-For now, not everything can be "modded", only these things can : **Items**,**Bots loadouts**,**Hideout files**,**Assorts**,**Traders**,**Weather**,**locales**,**scripting**,**maps**,.
-
 * Create your mod folder, the name need to match like this : **author-name-Version** depending on what you put in the *server.config.json*.
 * In this mod folder, create a file called **mod.config.json** and put the following code in :
 ```json
@@ -19,7 +17,7 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
   "dependencies": {},
   "res": {},
   "src":{
-      "scriptname":"path/to/script/file"
+		"nameOfTheScript": "path/to/script/js"
 	},
   "db": {
     "locales": {
@@ -34,7 +32,10 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
       "ragfair": {
           "barter":{},
           "items":{},
-          "level":{}
+          "level":{},
+          "customization":{},
+          "base": "db/assort/ragfair/base.json",
+          "categories": "db/assort/ragfair/categories.json",
       }
     },
     "maps": {
@@ -45,7 +46,7 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
           "loot":{
               "dynamic":{
                 "lootIDFolder":{
-                 "lootfileName":"/db/path/to/.json";
+                 "lootfileName":"db/path/to/.json";
                 }
               },
               "forced":{},
@@ -338,8 +339,9 @@ For now, not everything can be "modded", only these things can : **Items**,**Bot
           "inventory": {},
           "names": {}
         }
-    }
-}
+    },
+    "globals": "db/globals.json"
+  }
 }
 ```
 ### Some explanations :
