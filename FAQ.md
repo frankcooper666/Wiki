@@ -8,3 +8,9 @@ Make sure that `EmuTarkov-Server.exe` says that the server is running. After thi
 
 ### The launcher reports that no connection can be established
 Make sure that `EmuTarkov-Server.exe` says that the server is running.
+
+### Where is the mods folder located?
+In `user/mods/`. If it's not located there, create a folder `mods` in the `user` folder of the server.
+
+### Where is the `bots_f` folder located?
+![:goose:](https://i.ytimg.com/vi/nUj4ObkwrkY/maxresdefault.jpg)
