@@ -1,7 +1,7 @@
 # Edit weapons textures
 ## Explanation
 What we are going to do, is editing base gamefiles textures of a weapon, for making it a camo texture.
-
+You can find global images explanations here : https://github.com/justemutarkov/Wiki/tree/master/tutorials/how%20to%20skin%20objects
 /!\ Important information /!\
 **MAKE A BACKUP OF EVERYFILES YOU ARE GONNA EDIT IN THIS TUTORIAL, THIS IS VERY IMPORTANT**
 
