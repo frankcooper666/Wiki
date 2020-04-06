@@ -12,6 +12,13 @@ For this, heads to *ServerFolder/user/profiles* and create a copy of the profile
 
 It's recommended too to do it on a fresh wiped profile.
 
+## Table :
+* [Change your character level](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-my-character-level)
+* [Change your skills level](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#changing-my-skills-level)
+* [Change your quests status](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#change-quest-status)
+* [Change your hideouts areas status](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#changing-hideout-areas-status)
+* [Change your loyalty level](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-traders)
+
 ## Editing my character level
 In this part, we are going to change your character level in EmuTarkov. For doing this we are going to make edits in the following file : *ServerFolder/user/profiles/accountID/character.json*.
 
@@ -76,7 +83,7 @@ According that the master level of the skill is **51** we will need to have **51
 At the end, the line for each skill you want to max out looks like this : **"Progress": 5100,**
 
 ## Change quest status
-Well, in th is part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged).
+Well, in this part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged).
 
 For doing this heads to *ServerFolder/user/profiles/accountID/character.json* and search for this in the file : **"Quests":**.
 
@@ -136,10 +143,66 @@ Don't forget to save your changes !
 [Being redacted]
 
 ## Editing traders
-[Being redacted]
+Well, in this part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged).
+
+For doing this heads to *ServerFolder/user/profiles/accountID/character.json* and search for this in the file : **"TraderStandings":**.
+
+You're going to face something like this when found : 
+```json
+"54cb50c76803fa8b248b4571": {
+			"currentLevel": 1,
+			"currentSalesSum": 368974,
+			"currentStanding": 0.2,
+			"NextLoyalty": null,
+			"loyaltyLevels": {
+				"0": {
+					"minLevel": 1,
+					"minSalesSum": 0,
+					"minStanding": 0
+				},
+				"1": {
+					"minLevel": 15,
+					"minSalesSum": 1000000,
+					"minStanding": 0.2
+				},
+				"2": {
+					"minLevel": 22,
+					"minSalesSum": 1500000,
+					"minStanding": 0.35
+				},
+				"3": {
+					"minLevel": 33,
+					"minSalesSum": 2300000,
+					"minStanding": 0.5
+				}
+			}
+		},
+```
+
+Time to explain you everything !
+
+* **"54cb50c76803fa8b248b4571":**
+  * That's the trader ID
+* **"currentLevel":**
+  * This is the current the trader is (yes it's kinda self explanatory)
+* **"currentSalesSum":**
+  * This is the total money you got for selling and buying to the trader
+* **"currentStanding":**
+  * This is the total Standing points you got from quests for the trader
+* **"NextLoyalty":**
+  * Don't pay attention to this
+* **"loyaltyLevels":**
+  * This is all the Loyalty levels for the trader and their requirements
+
+So, for making all traders at their max loyalty level, we are going to take values from the Loyalty Level list, and take the last number values, and you will replace :
+* **currentStanding** value by **minStanding** value
+* **currentSalesSum** value by **minSalesSum** value
+* Set **currentLevel** to **4**
+
+Only last thing is to save the changes ! And you're done, the trader is LL4 now. You can find the list of all traders ID here : [Traders ID List](https://github.com/justemutarkov/Wiki/blob/master/resources/traders_ids.md)
 
 # Thanks
-**Tutorial made by : Sorata-Senpai**
+**Tutorials made by : Sorata-Senpai**
 
 # Official links
 **Discord link**: https://discord.gg/jv7X8wC
