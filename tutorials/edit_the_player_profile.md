@@ -22,7 +22,7 @@ It's recommended too to do it on a fresh wiped profile.
 ## Editing my character level
 In this part, we are going to change your character level in EmuTarkov. For doing this we are going to make edits in the following file : `ServerFolder/user/profiles/accountID/character.json`.
 
-Open the file with VSCodium or Notepad++ and find the following line : **"Experience": 0,**
+Open the file with VSCodium or Notepad++ and find the following line : **"Experience": 0,**.
 
 This line is defining how much experience your character have, and will define wich level he have, we wont change the line **"Level": 1,** because it's not needed, and not read by the server.
 
@@ -31,7 +31,7 @@ The only thing we will have to do is change this number, by one of the selected 
 The column we want to take the number from is : *Cumulative Total*.
 
 Copy this number and replace the number "0" in your profile and remove the extra coma in the number and keep the last one. For being level 30 for exemple, it should be this :
-**"Experience": 781760,**
+**"Experience": 781760,**.
 
 Save your changes and start the server, you now have the desired level !
 
@@ -64,13 +64,13 @@ When you will be at this point, you will face this :
 ```
 Some explanations :
 * **"Id":**
-  * Determine the name of the skill
+  * Determine the name of the skill.
 * **"Progress":**
-  * Determine the number of points you learned for this skill
+  * Determine the number of points you learned for this skill.
 * **"PointsEarnedDuringSession":**
-  * Determine how much points you got from the last session
+  * Determine how much points you got from the last session.
 * **"LastAccess":**
-  * Determine the last time you earned a point in this skill (it's a timestamp)
+  * Determine the last time you earned a point in this skill (it's a timestamp).
 
 So you gessed right ~~or not~~ that we will have to change the **"Progress":** part of each skill **EXCEPT** the skill **BotReload**.
 
@@ -81,7 +81,7 @@ How to know wich level is your skill, here is some easy math :
 
 According that the master level of the skill is **51** we will need to have **5100** points in **"Progress":**.
 
-At the end, the line for each skill you want to max out looks like this : **"Progress": 5100,**
+At the end, the line for each skill you want to max out looks like this : **"Progress": 5100,**.
 
 
 [Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
@@ -114,17 +114,17 @@ You're going to face something like this when found :
 ```
 Let me explain you these :
 * **"qid"**
-  * This is the quest ID wich will give you the name of the quest
+  * This is the quest ID wich will give you the name of the quest.
 * **"startTime"**
-  * This is the timestamp when you started the quest
+  * This is the timestamp when you started the quest.
 * **"CompletedConditions"**
   * This is where the requirements for completing the quests are stored. These are ID's.
 * **"statusTimers"**
-  * This is the timestamp since when the quest is available
+  * This is the timestamp since when the quest is available.
 * **"status"**
   * This define the status of the quest, decide if it's locked, completed, not started etc.
 
-*How do i find the correct quest ID for the quest i look for ?* You can find all quests ID here : [Quest list](https://github.com/justemutarkov/Wiki/blob/master/resources/quests_id_list.md)
+*How do i find the correct quest ID for the quest i look for ?* You can find all quests ID here : [Quest list](https://github.com/justemutarkov/Wiki/blob/master/resources/quests_id_list.md).
 
 I think you guessed what we are gonna change ~~or maybe you didn't~~ wich is kinda self explanatory. This is **"status"** part.
 
@@ -138,7 +138,7 @@ Here are all available status for quests :
 * FailRestartable
 * MarkedAsFailed
 
-So, if you want to finish the quest you will need to change the status to : **"AvailableForFinish"**, but if you want to re-do a quest you already did, you will need to change the status to : **"AvailableForStart"**
+So, if you want to finish the quest you will need to change the status to : **"AvailableForFinish"**, but if you want to re-do a quest you already did, you will need to change the status to : **"AvailableForStart"**.
 
 Don't forget to save your changes !
 
@@ -146,12 +146,53 @@ Don't forget to save your changes !
 
 [Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
 ## Changing hideout areas status
+Well, in this part you will learn how to change anything related to the hideout areas, that means, make it max level without having done the requirements for it.
 
-[Being redacted]
+For doing this heads to `ServerFolder/user/profiles/accountID/character.json` and search for this in the file : **"Hideout":**.
+
+When found, you will see something like this, don't be scared ! :
+```json
+"Production": {},
+		"Areas": [
+			{
+				"type": 3,
+				"level": 4,
+				"active": true,
+				"passiveBonusesEnabled": true,
+				"completeTime": 0,
+				"constructing": false,
+				"slots": []
+			},
+```
+Let's explain what all this mean :
+* **"Production":**
+  * This is the list of all current productions in your hideout, scav cases, crafting meds etc...
+* **"Areas":**
+  * This is the list of all area of the hideout.
+* **"type":**
+  * This is the area ID for each specific thing in the hideout like *Scav case*, *Christmas tree*, *Stash*, *Workbench* etc...
+* **"level":**
+  * This is the level of the selected area.
+* **"active":**
+  * It define if the actual area is active or not.
+* **"passiveBonusesEnabled":**
+  * This define if the bonuses that the area should apply to the player are active or not.
+* **"completeTime":**
+  * The timestamp of when the constructions should be completed.
+* **"constructing":**
+  * Define if the area is actually under construction or not.
+* **"slots":**
+  * This list all objects stored by the area, mainly used for generators and bitcoin farm.
+
+The two things that are important for us is : **"type":** and **"level":**. **Type** for knowning wich area we are editing and **Level** for setting it's level. You can find all area types and their max level here : [Hideout Areas list](https://github.com/justemutarkov/Wiki/blob/master/resources/hideout_areas_list.md)
+
+The only thing you will have to do is changing the level to the max level number for selected area type and save your changes ! After that you can start your server and check your hideout !
+
+
 
 [Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
 ## Editing traders
-Well, in this part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged).
+Well, in this part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged)..
 
 For doing this heads to `ServerFolder/user/profiles/accountID/character.json` and search for this in the file : **"TraderStandings":**.
 
@@ -190,24 +231,24 @@ You're going to face something like this when found :
 Time to explain you everything !
 
 * **"54cb50c76803fa8b248b4571":**
-  * That's the trader ID
+  * That's the trader ID.
 * **"currentLevel":**
-  * This is the current the trader is (yes it's kinda self explanatory)
+  * This is the current the trader is (yes it's kinda self explanatory).
 * **"currentSalesSum":**
-  * This is the total money you got for selling and buying to the trader
+  * This is the total money you got for selling and buying to the trader.
 * **"currentStanding":**
-  * This is the total Standing points you got from quests for the trader
+  * This is the total Standing points you got from quests for the trader.
 * **"NextLoyalty":**
-  * Don't pay attention to this
+  * Don't pay attention to this.
 * **"loyaltyLevels":**
-  * This is all the Loyalty levels for the trader and their requirements
+  * This is all the Loyalty levels for the trader and their requirements.
 
 So, for making all traders at their max loyalty level, we are going to take values from the Loyalty Level list, and take the last number values, and you will replace :
-* **currentStanding** value by **minStanding** value
-* **currentSalesSum** value by **minSalesSum** value
-* Set **currentLevel** to **4**
+* **currentStanding** value by **minStanding** value.
+* **currentSalesSum** value by **minSalesSum** value.
+* Set **currentLevel** to **4**.
 
-Only last thing is to save the changes ! And you're done, the trader is LL4 now. You can find the list of all traders ID here : [Traders ID List](https://github.com/justemutarkov/Wiki/blob/master/resources/traders_ids.md)
+Only last thing is to save the changes ! And you're done, the trader is LL4 now. You can find the list of all traders ID here : [Traders ID List](https://github.com/justemutarkov/Wiki/blob/master/resources/traders_ids.md).
 
 [Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
 # Thanks
