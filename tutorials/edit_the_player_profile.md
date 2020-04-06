@@ -6,7 +6,7 @@ For doing **any** edits in EmuTarkov i higly recommend you to use this software 
 This software is free and alot more helpfull for alot of things, like missing coma and everything about the syntax.
 * Make a backup of the profile you're using.
 
-For this, heads to *ServerFolder/user/profiles* and create a copy of the profile you're using (you should have only one if you don't know what you're doing, and need this tutorial).
+For this, heads to `ServerFolder/user/profiles` and create a copy of the profile you're using (you should have only one if you don't know what you're doing, and need this tutorial).
 
 **/!\ If you want to make any changes in your profile files, close both the game and the server, none of these should run /!\ .**
 
@@ -20,7 +20,7 @@ It's recommended too to do it on a fresh wiped profile.
 * [Change your loyalty level](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-traders)
 
 ## Editing my character level
-In this part, we are going to change your character level in EmuTarkov. For doing this we are going to make edits in the following file : *ServerFolder/user/profiles/accountID/character.json*.
+In this part, we are going to change your character level in EmuTarkov. For doing this we are going to make edits in the following file : `ServerFolder/user/profiles/accountID/character.json`.
 
 Open the file with VSCodium or Notepad++ and find the following line : **"Experience": 0,**
 
@@ -36,7 +36,7 @@ Copy this number and replace the number "0" in your profile and remove the extra
 Save your changes and start the server, you now have the desired level !
 
 ## Changing my skills level
-In this part, we are going to change our skills level, for having the master level of each skill. For this, heads to *ServerFolder/user/profiles/accountID/character.json* and search for this in the file : **"Skills":**.
+In this part, we are going to change our skills level, for having the master level of each skill. For this, heads to `ServerFolder/user/profiles/accountID/character.json` and search for this in the file : **"Skills":**.
 
 When you will be at this point, you will face this :
 
@@ -88,7 +88,7 @@ At the end, the line for each skill you want to max out looks like this : **"Pro
 ## Change quest status
 Well, in this part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged).
 
-For doing this heads to *ServerFolder/user/profiles/accountID/character.json* and search for this in the file : **"Quests":**.
+For doing this heads to `ServerFolder/user/profiles/accountID/character.json` and search for this in the file : **"Quests":**.
 
 You're going to face something like this when found : 
 ```json
@@ -149,10 +149,11 @@ Don't forget to save your changes !
 
 [Being redacted]
 
+[Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
 ## Editing traders
 Well, in this part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged).
 
-For doing this heads to *ServerFolder/user/profiles/accountID/character.json* and search for this in the file : **"TraderStandings":**.
+For doing this heads to `ServerFolder/user/profiles/accountID/character.json` and search for this in the file : **"TraderStandings":**.
 
 You're going to face something like this when found : 
 ```json
