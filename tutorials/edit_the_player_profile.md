@@ -29,9 +29,51 @@ Copy this number and replace the number "0" in your profile and remove the extra
 Save your changes and start the server, you now have the desired level !
 
 ## Changing my skills level
-*Being redacted*
+In this part, we are going to change our skills level, for having the master level of each skill. For this, heads to *ServerFolder/user/profiles/accountID/character.json* and search for this in the file : **"Skills":**.
 
+When you will be at this point, you will face this :
+```json
+"Common": [
+			{
+				"Id": "BotReload",
+				"Progress": 0,
+				"PointsEarnedDuringSession": 0,
+				"LastAccess": -2147483648
+			},
+			{
+				"Id": "Endurance",
+				"Progress": 0,
+				"PointsEarnedDuringSession": 0,
+				"LastAccess": 0
+			},
+			{
+				"Id": "Strength",
+				"Progress": 0,
+				"PointsEarnedDuringSession": 0,
+				"LastAccess": 0
+      },
+      [...]
+```
+Some explanations :
+* **"Id":**
+  * Determine the name of the skill
+* **"Progress":**
+  * Determine the number of points you learned for this skill
+* **"PointsEarnedDuringSession":**
+  * Determine how much points you got from the last session
+* **"LastAccess":**
+  * Determine the last time you earned a point in this skill (it's a timestamp)
 
+So you gessed right ~~or not~~ that we will have to change the **"Progress":** part of each skill **EXCEPT** the skill **BotReload**.
+
+How to know wich level is your skill, here is some easy math :
+* 1 Level = 100 points
+* 10 Levels = 1000 points
+* 15 Levels = 1500 points
+
+According that the master level of the skill is **51** we will need to have **5100** points in **"Progress":**.
+
+At the end, the line for each skill you want to max out looks like this : **"Progress": 5100,**
 
 # Thanks
 **Tutorial made by : Sorata-Senpai**
