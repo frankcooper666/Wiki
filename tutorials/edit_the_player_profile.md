@@ -39,6 +39,7 @@ Save your changes and start the server, you now have the desired level !
 In this part, we are going to change our skills level, for having the master level of each skill. For this, heads to *ServerFolder/user/profiles/accountID/character.json* and search for this in the file : **"Skills":**.
 
 When you will be at this point, you will face this :
+
 ```json
 "Common": [
 			{
@@ -82,6 +83,8 @@ According that the master level of the skill is **51** we will need to have **51
 
 At the end, the line for each skill you want to max out looks like this : **"Progress": 5100,**
 
+
+[Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
 ## Change quest status
 Well, in this part you will learn how to change your quest status, that means, make it finished without having done the requirements for it (you mainly need to do this when a specific quest is bugged).
 
@@ -138,6 +141,10 @@ Here are all available status for quests :
 So, if you want to finish the quest you will need to change the status to : **"AvailableForFinish"**, but if you want to re-do a quest you already did, you will need to change the status to : **"AvailableForStart"**
 
 Don't forget to save your changes !
+
+
+
+[Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
 ## Changing hideout areas status
 
 [Being redacted]
@@ -201,6 +208,7 @@ So, for making all traders at their max loyalty level, we are going to take valu
 
 Only last thing is to save the changes ! And you're done, the trader is LL4 now. You can find the list of all traders ID here : [Traders ID List](https://github.com/justemutarkov/Wiki/blob/master/resources/traders_ids.md)
 
+[Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
 # Thanks
 **Tutorials made by : Sorata-Senpai**
 
