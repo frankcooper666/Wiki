@@ -10,4 +10,4 @@ You can find here various tutorial and most of the servers functions !
 * [How to create a mod](https://github.com/justemutarkov/Wiki/blob/master/tutorials/create_a_mod.md)
 * [How to changes items textures](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_weapons_texture.md)
 * [How to create weather](https://github.com/justemutarkov/Wiki/blob/master/tutorials/create_weather.md)
-* [How to edit various player related things (Skills, level, quests, hideout)](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md)
+* [How to edit various player related things (Skills, level, quests, hideout, traders standing)](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md)
