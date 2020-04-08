@@ -13,5 +13,7 @@ Make sure that `EmuTarkov-Server.exe` says that the server is running.
 In `user/mods/`. If it's not located there, create a folder `mods` in the `user` folder of the server.
 
 ### Where is the `bots_f` folder located?
+## Where is the `bots_f` folder located?
 [the reference](https://discordapp.com/channels/681163523975675914/682164162704703488/682954979325247505)
-![:goose:](https://i.ytimg.com/vi/nUj4ObkwrkY/maxresdefault.jpg)
+
+<img src="https://i.ytimg.com/vi/nUj4ObkwrkY/maxresdefault.jpg" width="130">
