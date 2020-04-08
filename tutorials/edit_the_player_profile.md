@@ -18,6 +18,7 @@ It's recommended too to do it on a fresh wiped profile.
 * [Change your quests status](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#change-quest-status)
 * [Change your hideouts areas status](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#changing-hideout-areas-status)
 * [Change your loyalty level](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-traders)
+* [Add money to your stash](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#Adding-money-to-your-character)
 
 ## Editing my character level
 In this part, we are going to change your character level in EmuTarkov. For doing this we are going to make edits in the following file : `ServerFolder/user/profiles/accountID/character.json`.
@@ -251,6 +252,20 @@ So, for making all traders at their max loyalty level, we are going to take valu
 Only last thing is to save the changes ! And you're done, the trader is LL4 now. You can find the list of all traders ID here : [Traders ID List](https://github.com/justemutarkov/Wiki/blob/master/resources/traders_ids.md).
 
 [Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
+
+## Adding money to your character
+In this part, we are going to add some cash in your inventory. For doing this we are going to make edits in the following file : `ServerFolder/user/profiles/accountID/character.json`.
+
+First of all, make a stack of rouble, with a defined number, for an easier way, put it at **25666**, you now have a 25.666 stack of any money you choosed (can be lower number too, just make it a obvious number like 666 or 222 etc...). Now close the game **and** the server.
+
+Open the file with VSCodium or Notepad++ and find the following line : **"StackObjectsCount": 25666** (for our exemple, but change the number with the stack you made).
+
+This line is defining how much money the stack contain, and this is this line we are going to change. Now change the number **25666* by any number, like **99999999**. This will give you 99.999.999 $/€/Roubles
+
+Save your changes and start the server, you now have a stack of 99.999.999 money !
+
+[Back at the top](https://github.com/justemutarkov/Wiki/blob/master/tutorials/edit_the_player_profile.md#editing-differents-things-in-my-player-profile)
+
 # Thanks
 **Tutorials made by : Sorata-Senpai**
 
